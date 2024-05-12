@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <title>PowerPlan</title>
+  </head>
+  <body style = "background-position: center center;
+    height:100%;background-attachment: fixed;
+    background-size: cover;background-image: url('https://cdn.pixabay.com/photo/2023/12/20/07/04/clouds-8459053_1280.jpg');" onload = "darit()" >
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="maja.html">Māja</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ieteikumi.html"> Ieteikumi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="treninzale.html">Zale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="statistika.html">Statistika</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Informācija par mani</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mansplans.html">Mans plāns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="veidot_aktivitati.html">Veidot aktivitāti</a>
+          </li>
+
+
+        </ul>
+      </div>
+    </nav>
+    <style>
+      .py-3{
+        color:black !important;
+        font-weight: bold; 
+      }
+    </style>
+    <div style = "margin-top:60px;" class="container">
+      <center>
+      <h1><b>Mans plāns</b></h1>
+        <div  class="row time-block">
+          <div  class="col-2 col-md-1 hour text-center py-3">Pirmdiena</div>
+          <textarea id = "1dien" placeholder="Ievadiet paredzēto treniņu plānu šai dienai" class="col-8 col-md-10 description" rows="3"></textarea>
+        </div>
+        <div  class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3">Otrdiena</div>
+          <textarea id = "2dien" placeholder="Ievadiet paredzēto treniņu plānu šai dienai" class="col-8 col-md-10 description" rows="3"></textarea>
+        </div>
+        <div  class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3">Trešdiena</div>
+          <textarea id = "3dien" placeholder="Ievadiet paredzēto treniņu plānu šai dienai" class="col-8 col-md-10 description" rows="3"></textarea>
+        </div>
+        <div class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3">Ceturtdiena</div>
+          <textarea id = "4dien" placeholder="Ievadiet paredzēto treniņu plānu šai dienai" class="col-8 col-md-10 description" rows="3"></textarea>
+        </div>
+        <div class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3">Piektdiena</div>
+          <textarea  id = "5dien" placeholder="Ievadiet paredzēto treniņu plānu šai dienai" class="col-8 col-md-10 description" rows="3"></textarea>
+        </div>
+        <div class="row time-block">
+          <div class="col-2 col-md-1 hour text-center py-3">Sestdiena</div>
+          <textarea id = "6dien" placeholder="Ievadiet paredzēto treniņu plānu šai dienai" class="col-8 col-md-10 description" rows="3"></textarea>
+        </div>
+        <div class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">Svētdiena</div>
+          <textarea id = "7dien" placeholder="Ievadiet paredzēto treniņu plānu šai dienai" class="col-8 col-md-10 description" rows="3"></textarea>
+        </div>
+      
+    </div>
+    </center>
+    <div style = "margin-top:50px">
+      <center><button style = "" data-toggle="modal" data-target="#exampleModal" type = "button" class="btn btn-primary" onclick = "ej()">Iestatīt kā manu plānu</button> 
+    </center>
+    </div>
+  
+
+      
+  </div >
+    <center>
+    <h1 style = "margin-top:65px "><b>Piedāvātie plāni</b></h1>
+    </center>
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://www.eatthis.com/wp-content/uploads/sites/4/2022/10/brian-shaw-.jpg?quality=82&strip=all&w=640" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Stipra veča plāns</h5>
+                <p class="card-text">
+                  Plāns priekš stipriem bicepsiem.
+                  Ķermeņa augšdaļas nodarbināšana.
+                </p>
+                <a style = "color:white" onclick = "stiprs()" type = "button" class="btn btn-primary">Apskatīt plānu</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://img.etimg.com/thumb/width-1200,height-1200,imgsize-1290691,resizemode-75,msid-92178213/magazines/panache/are-you-a-male-runner-pay-attention-to-your-energy-level-before-going-for-a-sprint-to-avoid-fractures.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Plāns priekš skriešanas attīstīšanas</h5>
+                <p class="card-text">
+                  Šis plāns nodrošina sabalansētu kāju muskuļu treniņu. 
+                </p>
+                <a style = "color:white" onclick = "skriet()" type = "button" class="btn btn-primary">Apskatīt plānu</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+          </div>
+        </div>
+      </div>
+      
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h1>Plāns tika iestatīts</h1>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+<script src = "mansplans.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+</html>
